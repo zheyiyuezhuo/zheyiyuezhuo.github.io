@@ -6,7 +6,7 @@
   <link href="https://zheyiyuezhuo.github.io/atom.xml" rel="self"/>
   
   <link href="https://zheyiyuezhuo.github.io/"/>
-  <updated>2022-06-24T12:14:31.248Z</updated>
+  <updated>2022-06-24T12:38:21.280Z</updated>
   <id>https://zheyiyuezhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NAS系统横评</title>
+    <link href="https://zheyiyuezhuo.github.io/2022/06/24/NAS%E7%B3%BB%E7%BB%9F%E6%A8%AA%E8%AF%84/"/>
+    <id>https://zheyiyuezhuo.github.io/2022/06/24/NAS%E7%B3%BB%E7%BB%9F%E6%A8%AA%E8%AF%84/</id>
+    <published>2022-06-24T12:36:38.000Z</published>
+    <updated>2022-06-24T12:38:21.280Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="NAS-体验心得"><a href="#NAS-体验心得" class="headerlink" title="NAS 体验心得"></a>NAS 体验心得</h1><h2 id="自己用过的-NAS-系统"><a href="#自己用过的-NAS-系统" class="headerlink" title="自己用过的 NAS 系统"></a>自己用过的 NAS 系统</h2><ol><li>OMV</li><li>Truenas scale</li><li>Unraid</li></ol><h2 id="1-OMV"><a href="#1-OMV" class="headerlink" title="1. OMV"></a>1. OMV</h2><ul><li><p>优点：</p><ol><li>基于 debian，开源免费</li><li>有镜像源，更新方便</li><li>可以支持多种储存模式：raid，zfs，聚合文件系统等</li><li>支持原生 docker，配合 portainer，配置简单</li></ol></li><li><p>缺点：</p><ol><li>webui 一般，不是很美观，配置也不是特别方便</li><li>每个文件系统优化可能没有其他系统单独集成的好</li><li><strong>网桥和 docker 会冲突，造成某一方无法使用</strong></li></ol></li></ul><h2 id="2-Truenas-scale"><a href="#2-Truenas-scale" class="headerlink" title="2. Truenas scale"></a>2. Truenas scale</h2><ul><li><p>优点：</p><ol><li>系统基于 debian，开源免费</li><li>支持 ZFS，且有扩容的希望，配置比较多</li><li>可以支持 docker 了，且有社区应用支持</li></ol></li><li><p>缺点：</p><ol><li>服务器在国外，正常使用就需要魔法</li><li>docker 基于 K3S，且社区应用的部署必须要外网环境，比较麻烦</li><li>app 拉取需要魔法才能部署成功</li><li>暂时无法扩容硬盘，未来可能</li><li>配置要求较高，特别是内存</li></ol></li></ul><h2 id="3-Unraid"><a href="#3-Unraid" class="headerlink" title="3. Unraid"></a>3. Unraid</h2><ul><li><p>优点：</p><ol><li>webui 颜值高，且还算易用</li><li>每次重启后会使所有直接对系统的修改复原，需要配合 go 文件进行使用</li><li>加盘容易，只要是是小于校验盘容量的盘，可以直接加</li><li>有缓存机制，写入文件时可以先写入缓存盘（ssd）来保存速度</li><li>docker 部署容易，且应用商店各种 docker 任你选择，而且有很多模板</li></ol></li><li><p>缺点：</p><ol><li>需要付费购买</li><li>系统基于某个小众的 Linux，不宜用</li><li>Docker 是部署在一个虚拟硬盘里来使用的，多了可能空间满，需要扩容</li><li>更新慢，几乎一年一次大更新，比如 docker 版本升级等</li><li>每次重启后会使所有直接对系统的修改复原，需要配合 go 文件进行使用</li><li>读写文件时对系统资源消耗大，且读取速度慢</li><li>感觉适用于千兆家庭网络，不适合万兆环境</li><li>往 unraid 写入可以使用 ssd 做缓存，但是 unraid 往电脑复制时无法加速</li><li>一个月一次校验，2 个 12T 盘一次校验 2 天时间，期间复制 10-20m&#x2F;s，像亲戚来了</li><li>下载盘无法设置不参与校验</li></ol></li></ul>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;NAS-体验心得&quot;&gt;&lt;a href=&quot;#NAS-体验心得&quot; class=&quot;headerlink&quot; title=&quot;NAS 体验心得&quot;&gt;&lt;/a&gt;NAS 体验心得&lt;/h1&gt;&lt;h2 id=&quot;自己用过的-NAS-系统&quot;&gt;&lt;a href=&quot;#自己用过的-NAS-系统&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://zheyiyuezhuo.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="NAS" scheme="https://zheyiyuezhuo.github.io/tags/NAS/"/>
+    
+    <category term="OMV" scheme="https://zheyiyuezhuo.github.io/tags/OMV/"/>
+    
+    <category term="Unraid" scheme="https://zheyiyuezhuo.github.io/tags/Unraid/"/>
+    
+    <category term="truenas-sclae" scheme="https://zheyiyuezhuo.github.io/tags/truenas-sclae/"/>
+    
+  </entry>
   
   <entry>
     <title>Github部署基于hexo的静态网页</title>
